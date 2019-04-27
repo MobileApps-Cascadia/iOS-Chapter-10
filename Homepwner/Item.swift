@@ -13,8 +13,8 @@ struct Item {
     
     init(random: Bool = false) {
         if random {
-            let adjectives = ["Fluffy", "Rusty", "Shiny"]
-            let nouns = ["Bear", "Spork", "Mac"]
+            let adjectives = ["Fluffy", "Rusty", "Shiny", "Silver", "Gold"]
+            let nouns = ["Bear", "Spork", "Mac", "Bow", "Airplane"]
             
             var idx = arc4random_uniform(UInt32(adjectives.count))
             let randomAdjective = adjectives[Int(idx)]
@@ -22,14 +22,10 @@ struct Item {
             idx = arc4random_uniform(UInt32(nouns.count))
             let randomNoun = nouns[Int(idx)]
             
-            let randomName = "\(randomAdjective) \(randomNoun)"
-            let randomValue = Int(arc4random_uniform(100))
-            let randomSerialNumber =
+            name = "\(randomAdjective) \(randomNoun)"
+            valueInDollars = Int(arc4random_uniform(100))
+            serialNumber =
             UUID().uuidString.components(separatedBy: "-").first!
-            
-            name = randomName
-            serialNumber = randomSerialNumber
-            valueInDollars = randomValue
         } else {
             name = ""
             serialNumber = nil
