@@ -10,7 +10,7 @@ protocol ItemRepository {
 
 class ItemsViewController: UITableViewController {
     
-    var itemStore: ItemRepository!
+    var itemStore: ItemStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
