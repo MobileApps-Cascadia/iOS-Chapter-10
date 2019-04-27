@@ -3,10 +3,14 @@
 //
 
 import UIKit
+protocol ItemRepository {
+    var allItems:[Item] { get set }
+    @discardableResult func createItem() -> Item
+}
 
 class ItemsViewController: UITableViewController {
     
-    var itemStore: ItemStore!
+    var itemStore: ItemRepository!
     
     override func viewDidLoad() {
         super.viewDidLoad()

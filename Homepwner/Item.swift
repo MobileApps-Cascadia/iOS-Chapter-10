@@ -4,23 +4,14 @@
 
 import Foundation
 
-class Item: NSObject {
+struct Item {
     
     var name: String
     var valueInDollars: Int
     var serialNumber: String?
-    let dateCreated: Date
+    let dateCreated: Date = Date()
     
-    init(name: String, serialNumber: String?, valueInDollars: Int) {
-        self.name = name
-        self.serialNumber = serialNumber
-        self.valueInDollars = valueInDollars
-        self.dateCreated = Date()
-        
-        super.init()
-    }
-    
-    convenience init(random: Bool = false) {
+    init(random: Bool = false) {
         if random {
             let adjectives = ["Fluffy", "Rusty", "Shiny"]
             let nouns = ["Bear", "Spork", "Mac"]
@@ -36,11 +27,14 @@ class Item: NSObject {
             let randomSerialNumber =
             UUID().uuidString.components(separatedBy: "-").first!
             
-            self.init(name: randomName,
-                serialNumber: randomSerialNumber,
-                valueInDollars: randomValue)
+            name = randomName
+            serialNumber = randomSerialNumber
+            valueInDollars = randomValue
         } else {
-            self.init(name: "", serialNumber: nil, valueInDollars: 0)
+            name = ""
+            serialNumber = nil
+            valueInDollars = 0
+            
         }
     }
     
