@@ -11,8 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
         
-        // TODO: Update
+        // Get a reference to the ItemsViewController
         let itemsController = window!.rootViewController as! ItemsViewController
+        // Assign a particular store versions to the controller
         itemsController.itemStore = RandomItemStore()
         
         return true
