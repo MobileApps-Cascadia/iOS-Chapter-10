@@ -107,8 +107,7 @@
 				6B64C0FB1B84C7C300288BE3 /* LaunchScreen.storyboard */,
 				6B64C0FE1B84C7C300288BE3 /* Info.plist */,
 				6B64C1201B84C8EB00288BE3 /* ItemsViewController.swift */,
-				6B64C1221B84C9C900288BE3 /* Item.swift */,
-				6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */,
+				D1DC23932278F03F00754B48 /* Models */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -129,6 +128,15 @@
 				6B64C1141B84C7C300288BE3 /* Info.plist */,
 			);
 			path = HomepwnerUITests;
+			sourceTree = "<group>";
+		};
+		D1DC23932278F03F00754B48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B64C1221B84C9C900288BE3 /* Item.swift */,
+				6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
