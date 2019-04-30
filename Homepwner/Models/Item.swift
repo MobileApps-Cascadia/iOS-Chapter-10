@@ -19,7 +19,7 @@ struct Item {
     init(random: Bool = false) {
         if random {
             let adjectives = ["Fluffy", "Rusty", "Shiny", "Silver", "Gold"]
-            let nouns = ["Bear", "Spork", "Mac", "Bow", "Airplane"]
+            let nouns = ["Bear", "Spork", "Mac", "Bow", "Airplane, JetPack"]
             
             var idx = arc4random_uniform(UInt32(adjectives.count))
             let randomAdjective = adjectives[Int(idx)]

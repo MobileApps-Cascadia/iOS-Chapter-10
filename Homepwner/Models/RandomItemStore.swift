@@ -4,7 +4,7 @@
 
 import Foundation
 
-class RandomItemStore{
+class RandomItemStore :ItemRepository{
     
     var allItems: [Item] = []
     
