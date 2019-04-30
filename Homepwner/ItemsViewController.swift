@@ -10,7 +10,8 @@ protocol ItemRepository {
 
 class ItemsViewController: UITableViewController {
     
-    var itemStore: ItemStore!
+    // TODO: Change the itemStore type to use the abstract "ItemRepository" protocol instead of the particular RandomItemStore class (IoC)
+    var itemStore: RandomItemStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +31,15 @@ class ItemsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView,
         cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            // Create an instance of UITableViewCell, with default appearance
+            // Create an reusable instance of UITableViewCell,
+            //  with default appearance
             let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
             
-            // Set the text on the cell with the description of the item
-            // that is at the nth index of items, where n = row this cell
-            // will appear in on the tableview
+            // Set the text and detail using the ItemRepository
             let item = itemStore.allItems[indexPath.row]
-            
             cell.textLabel?.text = item.name
             cell.detailTextLabel?.text = "$\(item.valueInDollars)"
-            
+        
             return cell
     }
 }

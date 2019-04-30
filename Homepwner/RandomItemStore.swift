@@ -4,7 +4,7 @@
 
 import Foundation
 
-class ItemStore{
+class RandomItemStore{
     
     var allItems: [Item] = []
     

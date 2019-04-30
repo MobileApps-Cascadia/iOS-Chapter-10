@@ -11,6 +11,11 @@ struct Item {
     var serialNumber: String?
     let dateCreated: Date = Date()
     
+    init( name: String, valueInDollars: Int){
+        self.name = name ; self.valueInDollars = valueInDollars
+        self.serialNumber = UUID().uuidString.components(separatedBy: "-").first!
+    }
+    
     init(random: Bool = false) {
         if random {
             let adjectives = ["Fluffy", "Rusty", "Shiny", "Silver", "Gold"]
