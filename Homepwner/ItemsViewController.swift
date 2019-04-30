@@ -5,7 +5,7 @@
 import UIKit
 protocol ItemRepository {
     var allItems:[Item] { get set }
-    @discardableResult func createItem() -> Item
+    func createItem(item:Item)
 }
 
 class ItemsViewController: UITableViewController {

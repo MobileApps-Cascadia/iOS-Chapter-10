@@ -10,16 +10,13 @@ class RandomItemStore{
     
     init() {
         for _ in 0..<5 {
-            createItem()
+            let newItem = Item(random: true)
+            createItem(item:newItem)
         }
     }
     
-    @discardableResult func createItem() -> Item {
-        let newItem = Item(random: true)
-        
-        allItems.append(newItem)
-        
-        return newItem
+    func createItem(item:Item) {
+        allItems.append(item)
     }
     
 }
