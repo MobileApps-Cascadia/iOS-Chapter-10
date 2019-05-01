@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Assign a particular store versions to the ItemViewController
         if let itemsController = window?.rootViewController as? ItemsViewController {
-            itemsController.itemStore = RandomItemStore()
+            itemsController.itemStore = RandomItemStore() as? ItemRepository
         }
         
         return true
