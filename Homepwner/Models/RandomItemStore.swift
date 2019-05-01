@@ -4,13 +4,15 @@
 
 import Foundation
 
-class RandomItemStore{
+class RandomItemStore: ItemRepository{
     
     var allItems: [Item] = []
     
     init() {
-        let newItem = Item(name:"Jetback",valueInDollars:2500)
-        createItem(item:newItem)
+        for _ in 0..<5 {
+            let newItem = Item(random: true)
+            createItem(item:newItem)
+        }
     }
     
     func createItem(item:Item) {
