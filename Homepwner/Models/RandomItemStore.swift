@@ -9,10 +9,8 @@ class RandomItemStore{
     var allItems: [Item] = []
     
     init() {
-        for _ in 0..<5 {
-            let newItem = Item(random: true)
-            createItem(item:newItem)
-        }
+        let newItem = Item(name:"Jetback",valueInDollars:2500)
+        createItem(item:newItem)
     }
     
     func createItem(item:Item) {
