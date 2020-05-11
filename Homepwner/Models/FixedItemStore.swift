@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class FixedItemStore: ItemRepository {
+    
+    var allItems = [Item]()
+    
+    init() {
+        allItems.append(Item(name: "JetPack", valueInDollars: 2500))
+    }
+    
+    func createItem(item: Item) {
+        allItems.append(item)
+    }
+    
+    
+}
