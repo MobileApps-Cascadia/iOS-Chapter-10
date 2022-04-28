@@ -9,9 +9,8 @@ protocol ItemRepository {
 }
 
 class ItemsViewController: UITableViewController {
-    
     // TODO: Change the itemStore type to use the abstract "ItemRepository" protocol instead of the particular RandomItemStore class (IoC)
-    var itemStore: RandomItemStore!
+    var itemStore: ItemRepository!
     
     override func viewDidLoad() {
         super.viewDidLoad()
