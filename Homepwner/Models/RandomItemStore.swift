@@ -4,7 +4,7 @@
 
 import Foundation
 
-class RandomItemStore{
+class RandomItemStore: ItemRepository{
     
     var allItems: [Item] = []
     
@@ -18,5 +18,4 @@ class RandomItemStore{
     func createItem(item:Item) {
         allItems.append(item)
     }
-    
 }
