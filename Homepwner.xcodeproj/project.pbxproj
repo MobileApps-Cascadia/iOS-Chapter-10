@@ -16,6 +16,7 @@
 		6B64C1211B84C8EB00288BE3 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1201B84C8EB00288BE3 /* ItemsViewController.swift */; };
 		6B64C1231B84C9C900288BE3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1221B84C9C900288BE3 /* Item.swift */; };
 		6B64C1251B84CB3F00288BE3 /* RandomItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */; };
+		DAFB442E281B35F100B016C8 /* FixedItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB442D281B35F100B016C8 /* FixedItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6B64C1201B84C8EB00288BE3 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		6B64C1221B84C9C900288BE3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomItemStore.swift; sourceTree = "<group>"; };
+		DAFB442D281B35F100B016C8 /* FixedItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				6B64C1221B84C9C900288BE3 /* Item.swift */,
 				6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */,
+				DAFB442D281B35F100B016C8 /* FixedItemStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				6B64C1211B84C8EB00288BE3 /* ItemsViewController.swift in Sources */,
 				6B64C1231B84C9C900288BE3 /* Item.swift in Sources */,
+				DAFB442E281B35F100B016C8 /* FixedItemStore.swift in Sources */,
 				6B64C1251B84CB3F00288BE3 /* RandomItemStore.swift in Sources */,
 				6B64C0F31B84C7C300288BE3 /* AppDelegate.swift in Sources */,
 			);
