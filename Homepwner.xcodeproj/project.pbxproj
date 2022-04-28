@@ -101,11 +101,11 @@
 		6B64C0F11B84C7C300288BE3 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
-				6B64C0F21B84C7C300288BE3 /* AppDelegate.swift */,
+				6B64C0FE1B84C7C300288BE3 /* Info.plist */,
+				6B64C0FB1B84C7C300288BE3 /* LaunchScreen.storyboard */,
 				6B64C0F61B84C7C300288BE3 /* Main.storyboard */,
 				6B64C0F91B84C7C300288BE3 /* Assets.xcassets */,
-				6B64C0FB1B84C7C300288BE3 /* LaunchScreen.storyboard */,
-				6B64C0FE1B84C7C300288BE3 /* Info.plist */,
+				6B64C0F21B84C7C300288BE3 /* AppDelegate.swift */,
 				6B64C1201B84C8EB00288BE3 /* ItemsViewController.swift */,
 				D1DC23932278F03F00754B48 /* Models */,
 			);
